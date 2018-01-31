@@ -1,0 +1,20 @@
+<script type="text/javascript">
+function toggle_visibility(id) {
+   var e = document.getElementById(id);
+   if(e.style.display == 'block')
+      e.style.display = 'none';
+   else
+      e.style.display = 'block';
+}
+
+function toggle_visibility1(id) {
+   var e = document.getElementById(id);
+   if(e.style.display == 'none')
+      e.style.display = 'block';
+   else
+      e.style.display = 'none';
+}
+</script>
+<a href="#" onclick="toggle_visibility('foo'); toggle_visibility1('foo2');"> if you click here, #foo will change visibility</a>
+<div style="display:block;" id="foo"> blablabla </div>
+<div style="display:none;" id="foo2"> other </div>
